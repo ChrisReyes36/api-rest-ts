@@ -1,0 +1,14 @@
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongo_api_rest_ts
+    ports:
+      - 27019:27017
+    volumes:
+      - ./data:/data/db
+    networks:
+      - api_rest_ts
+networks:
+  api_rest_ts:
+    driver: bridge

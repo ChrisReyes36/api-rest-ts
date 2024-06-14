@@ -1,0 +1,8 @@
+node_modules
+.env
+src/.docker/data
+.idea
+.vscode
+storage/*
+!storage/.gitkeep
+dist
